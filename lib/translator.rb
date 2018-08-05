@@ -8,6 +8,10 @@ def load_library(file_path)
   emoji_hash = {}
   emoji_hash['get_meaning'] = {}
   emoji_hash['get_emoticon'] = {}
+  
+  emojis.each do |a, b|
+    binding.pry
+  end
 end
 
 def get_japanese_emoticon
