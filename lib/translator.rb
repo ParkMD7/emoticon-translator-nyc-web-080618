@@ -9,8 +9,8 @@ def load_library(file_path)
   emoji_hash['get_meaning'] = {}
   emoji_hash['get_emoticon'] = {}
   
-  emojis.each do |a, b|
-    binding.pry
+  emojis.each do |emotion, emoticon|
+    #binding.pry
   end
 end
 
