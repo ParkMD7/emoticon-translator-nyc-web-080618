@@ -27,6 +27,12 @@ def get_japanese_emoticon(file_path, emojis)
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(file_path, emojis)
+  lib = load_library(file_path)
+  
+  if lib['get_meaning'][emojis].nil?
+    return "Sorry, that emoticon was not found"
+  else
+    lib['get_meaning'][emojis]
+  end
 end
