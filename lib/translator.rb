@@ -2,6 +2,8 @@
 require 'yaml'
 require 'pry'
 
+
+
 def load_library(file_path)
   emojis = YAML.load_file(file_path)
   
@@ -17,6 +19,8 @@ def load_library(file_path)
   emoji_hash
 end
 
+
+
 def get_japanese_emoticon(file_path, emojis)
   lib = load_library(file_path)
   
@@ -26,6 +30,8 @@ def get_japanese_emoticon(file_path, emojis)
     lib['get_emoticon'][emojis]
   end
 end
+
+
 
 def get_english_meaning(file_path, emojis)
   lib = load_library(file_path)
