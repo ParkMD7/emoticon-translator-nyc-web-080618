@@ -11,6 +11,7 @@ def load_library(file_path)
   
   emojis.each do |emotion, emoticon|
     #binding.pry
+      
   end
 end
 
