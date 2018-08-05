@@ -18,9 +18,10 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, emojis)
-  load_library(file_path)
+  lib = load_library(file_path)
   
-  
+  if lib['get_emoticon'][emoji].nil?
+    return ""
   
 end
 
